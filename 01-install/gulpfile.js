@@ -13,5 +13,5 @@ gulp.task('jade', function () {
     .pipe(jade({
       // locals: YOUR_LOCALS
     }))
-    .pipe(gulp.dest('./dist/'))  // gulp.dest(選擇目的地)
+    .pipe(gulp.dest('./public/'))  // gulp.dest(選擇目的地)
 });

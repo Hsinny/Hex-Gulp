@@ -20,3 +20,4 @@
 6. 新增 source 資料夾，撰寫的檔案放此資料夾
 7. 新增 gulpfile.js，引入 gulp & gulp-jade
    ###### 程式碼參照使用文件 [gulp-jade](https://www.npmjs.com/package/gulp-jade) 
+8. `gulp jade` 終端機執行 jade 套件任務，會從 gulpfile.js 內指定路徑的檔案(*.jade)，去執行套件，並將結果存至目的地資料夾
