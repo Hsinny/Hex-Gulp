@@ -9,7 +9,7 @@ var jade = require('gulp-jade');     // 引入 gulp-jade 工具
 gulp.task('jade', function () {
   // var YOUR_LOCALS = {};
 
-  gulp.src('./source/*.jade')    // gulp.src(來源資料夾)
+  gulp.src('./source/**/*.jade')    // gulp.src(來源資料夾)  加入/** => 針對所有子資料夾做編譯
     .pipe(jade({
       pretty: true               // 編譯的 HTML 會展開 （ 沒加則是壓縮版 )
       // locals: YOUR_LOCALS
