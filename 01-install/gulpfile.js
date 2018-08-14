@@ -11,6 +11,7 @@ gulp.task('jade', function () {
 
   gulp.src('./source/*.jade')    // gulp.src(來源資料夾)
     .pipe(jade({
+      pretty: true               // 編譯的 HTML 會展開 （ 沒加則是壓縮版 )
       // locals: YOUR_LOCALS
     }))
     .pipe(gulp.dest('./public/'))  // gulp.dest(選擇目的地)

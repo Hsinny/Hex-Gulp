@@ -21,3 +21,4 @@
 7. 新增 gulpfile.js，引入 gulp & gulp-jade
    ###### 程式碼參照使用文件 [gulp-jade](https://www.npmjs.com/package/gulp-jade) 
 8. `gulp jade` 終端機執行 jade 套件任務，會從 gulpfile.js 內指定路徑的檔案(*.jade)，去執行套件，並將結果存至目的地資料夾
+9.  gulpfile.js 的 jade 任務加入 pretty: true，編譯完在 public 的 HTML 會展開，非壓縮版。
