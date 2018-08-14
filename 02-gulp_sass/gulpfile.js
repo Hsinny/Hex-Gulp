@@ -14,3 +14,5 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
   gulp.watch('./source/sass/**/*.sass', ['sass']);    // 在路徑內的 sass 檔案有異動時，執行['sass']
 });
+
+gulp.task('default', ['sass', 'watch']);       // 預設 gulp 的任務，執行 gulp 會依序執行裡面的 sass、watch... 
