@@ -6,3 +6,10 @@
 3. 控管專案資料夾內的 npm 套件
 - `npm init`，會產生一個package.json檔案，裡面有些基本設定，用來控管專案資料夾內的 npm 套件。
 4. `npm install 套件名稱 --save`，將套件資訊儲存於 package.json，並產生 node_modules 資料夾，裡面包含許多 npm 的相依套件，一般不會去對  node_modules 的檔案進行編輯。
+
+5. 進行開發：
+舉例使用 jade Template Language，安裝 gulp-jade npm
+```
+npm install gulp-jade --save
+```
+這樣可將套件存進 package.json
