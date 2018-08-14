@@ -12,3 +12,4 @@
 ---
 
 10. 預設 gulp 的任務，執行 gulp 會依序執行裡面的 sass、watch... 
+11. 引入 gulp-plumber， .pipe(plumber())加入到 .scr(來源資料夾)的後面，讓執行的任務內容若有錯誤不會停止，

@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var plumber = require('gulp-plumber');
 
 /*===================================================================*/
 /* gulp-sass Task : 
@@ -7,6 +8,7 @@ var sass = require('gulp-sass');
 /*===================================================================*/
 gulp.task('sass', function () {
   return gulp.src('./source/sass/**/*.sass')    // gulp.src(來源資料夾)  加入/** => 針對所有子資料夾做編譯
+    .pipe(plumber())                            // 出錯不停止執行
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./public/css'));           // gulp.dest(目的地資料夾)
 });
