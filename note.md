@@ -7,3 +7,5 @@
 5. 新增 gulpfile.js
 6. 引入 gulp-sass，指令參考 [官方文件](https://www.npmjs.com/package/gulp-sass) 
 7. 執行 gulp sass，在目的地資料夾產生編譯檔案.css
+8. 加入 gulp.task watch 監聽，來源資料夾內的 sass 檔案若有異動，即執行 sass 編譯
+9. 異動 *.sass 檔案內容

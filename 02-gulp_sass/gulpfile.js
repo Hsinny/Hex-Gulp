@@ -11,6 +11,6 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./public/css'));           // gulp.dest(目的地資料夾)
 });
 
-gulp.task('sass:watch', function () {
+gulp.task('watch', function () {
   gulp.watch('./source/sass/**/*.sass', ['sass']);    // 在路徑內的 sass 檔案有異動時，執行['sass']
 });
