@@ -2,3 +2,7 @@ body {
   height: 100vh;
   color: white;
   background-color: green; }
+
+.card {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
